@@ -1,0 +1,62 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    background-color: #121212; /* Black background for the theme */
+    color: #ffffff; /* White text for contrast */
+}
+
+/* Navigation Styles */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333333; /* Dark background for the navbar */
+    color: white;
+    z-index: 1000;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #121212; /* Black text on hover */
+    background-color: #ff8c00; /* Orange background on hover */
+}
+
+/* Scrolled State */
+nav.scrolled {
+    background-color: #222222; /* Slightly darker when scrolled */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Section Styles */
+section {
+    padding: 100px 20px;
+    height: 100vh;
+}
+
+#home { background-color: #282828; /* Dark gray background for sections */ }
+#services { background-color: #383838; }
+#about { background-color: #484848; }
+#contact { background-color: #585858; }
